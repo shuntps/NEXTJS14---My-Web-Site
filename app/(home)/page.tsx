@@ -9,7 +9,7 @@ export default function Home() {
          <ThemeToggle />
          <div className="flex flex-col items-center gap-3 mt-3">
             <Link href="/portfolio">Portfolio</Link>
-            <Link href="/portfolio">Dashboard</Link>
+            <Link href="/dashboard">Dashboard</Link>
          </div>
       </div>
    );
