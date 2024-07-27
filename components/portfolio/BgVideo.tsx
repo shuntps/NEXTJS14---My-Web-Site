@@ -2,6 +2,7 @@
 
 import { useTheme } from "next-themes";
 import React, { useState, useEffect } from "react";
+
 import { cn } from "@/lib/utils";
 
 export default function BgVideo() {
@@ -17,7 +18,7 @@ export default function BgVideo() {
    }
 
    return (
-      <div className="relative">
+      <>
          <video
             className={cn(
                "fixed inset-0 w-full h-full object-cover transition-opacity duration-300 z-[-1]",
@@ -42,7 +43,6 @@ export default function BgVideo() {
          >
             <source src="/videos/bg-video-dark.mp4" type="video/mp4" />
          </video>
-         {/* Foreground content goes here */}
-      </div>
+      </>
    );
 }
